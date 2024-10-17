@@ -6,7 +6,7 @@ describe('login website', () => {
         cy.visit('https://profile.w3schools.com/login'); 
       });
 
-    it.only('login', () => {
+    it('login', () => {
       
 
       cy.fixture("credentail").then((op)=>{
