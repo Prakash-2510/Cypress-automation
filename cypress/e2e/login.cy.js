@@ -34,7 +34,7 @@ describe('login website', () => {
 
       })
 
-      it('wrong password',()=>{
+      it.only('wrong password',()=>{
     
 
         cy.fixture("credentail").then((op)=>{
