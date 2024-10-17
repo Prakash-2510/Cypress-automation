@@ -18,7 +18,8 @@ describe('login website', () => {
         ln.setverifylogin();
         cy.frameLoaded('#top-nav-bar-iframe');
         cy.iframe('#top-nav-bar-iframe');
-        cy.get('#logout-link').click({force:true})
+        cy.get('[aria-label="Goals"] > .css-1k9efnl > .chakra-text').click()
+        cy.get('.chakra-stack > .chakra-heading').contains('My Goals')
         
         
         
