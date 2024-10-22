@@ -1,17 +1,17 @@
-import Login from "../Pageobject/login";
+import Login from "../Pageobject/LoginInEcommerce";
 
 describe('Login user', ()=>{
 
     beforeEach('visitwebsite',()=>{
 
-        cy.visit('https://parabank.parasoft.com/parabank/index.htm?ConnType=JDBC');
+        cy.visit('https://www.saucedemo.com/');
         
     })
    
-    it('Login User',()=>{
+    it.only('Login User',()=>{
         const ln=new Login();
-        ln.setUserName("Prakashp");
-        ln.setPassword("Yug@9725574207");
+        ln.setUserName("standard_user");
+        ln.setPassword("secret_sauce");
         ln.clickBtn();
         ln.loginVerify()
         

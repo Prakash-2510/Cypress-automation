@@ -2,19 +2,31 @@ class Login
 
 {
 
-setEmailid(emailid)
+    txtUserName="input[name='username']";
+    txtPassword="input[name='password']";
+    txtClickBtn="input[value='Log In']";
+    txtVerify="div[id='showOverview'] h1[class='title']"
+
+setUserName(username)
 {
-    cy.get('[type="text"]').type(emailid)
+    cy.get(this.txtUserName).type(username)
 
 }
 setPassword(password)
 {
-    cy.get("[type='password']").type(password)
+    cy.get(this.txtPassword).type(password)
 }
 
-setbtn()
+clickBtn()
 {
-    cy.get(".LoginForm_login_button__B4Ksc").click()
+
+    cy.get(this.txtClickBtn).click();
 }
+
+loginVerify()
+{
+    cy.get(this.txtVerify).contains('Accounts Overview');
+}
+
 }
 export default Login;
