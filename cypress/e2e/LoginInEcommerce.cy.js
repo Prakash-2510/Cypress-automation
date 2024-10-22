@@ -1,37 +1,8 @@
-import Login from "../Pageobject/LoginInEcommerce";
+describe('login in the e-commerce', ()=>{
 
-describe('Login user', ()=>{
+it('Positive login',()=>{
 
-    beforeEach('visitwebsite',()=>{
-
-        cy.visit('https://www.saucedemo.com/');
-        
-    })
-   
-    it.only('Login User',()=>{
-        const ln=new Login();
-        ln.setUserName("standard_user");
-        ln.setPassword("secret_sauce");
-        ln.clickBtn();
-        ln.loginVerify()
-        
-  
-
-    })
-
-    it('Username not found',()=>{
-      const ln=new Login();
-      ln.setUserName("Prakashddd");
-      ln.setPassword("Yug@9725574207");
-      ln.clickBtn();
-      
-      
-
-
-  })
-
-
-
-
+    cy.visit('https://www.inmotionhosting.com/?_gl=1*h3g118*_gcl_au*NjgzNjg5MTQ2LjE3Mjk1ODgxMjc.&pk_vid=3b0860f33541b0861729588147d7c099')
+})
 
 })
