@@ -12,7 +12,6 @@ describe('Register', ()=>{
     it('Sucessfull Registation',()=>{
 
        
-        
         const ln=new Bankregister();
         ln.enterfirstname("Prakash");
         ln.enterlastname("Olakiya");
@@ -27,18 +26,9 @@ describe('Register', ()=>{
         ln.enterconfirmpassword("Yug@9725574207");
         ln.clickregister();
 
-
-        
-
-
-
-
-
     })
     it('User name already exist eorr message show',()=>{
 
-       
-        
         const ln=new Bankregister();
         ln.enterfirstname("Prakash");
         ln.enterlastname("Olakiya");
