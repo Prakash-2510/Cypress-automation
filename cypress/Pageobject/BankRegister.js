@@ -76,8 +76,6 @@ clickregister()
   {
     cy.get(this.alreadyusername).contains('This username already exists.')
   }
-
-
 }
 
 export default Bankregister;
